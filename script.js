@@ -11,9 +11,9 @@ function calculateTip(event){
 
     if(numOfPeople == "" | numOfPeople <=1){
         numOfPeople = 1;
-        document.getElementById('each').style.display = "none"
+        document.getElementById('each').style.display = "none";
     } else {
-        document.getElementById('each').style.display = "block"
+        document.getElementById('each').style.display = "block";
     }
 
     let total = (bill * serviceQual) / numOfPeople;
