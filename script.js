@@ -6,7 +6,7 @@ function calculateTip(event){
 
     if(bill == '' | serviceQual ==0){
         alert("Por favor, preencha os valores")
-        return;
+        return; 
     }
 
     if(numOfPeople == "" | numOfPeople <=1){
