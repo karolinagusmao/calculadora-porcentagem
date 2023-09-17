@@ -4,12 +4,12 @@ function calculateTip(event){
     let serviceQual = document.getElementById('serviceQual').value;
     let numOfPeople = document.getElementById('numOfPeople').value;
 
-    if(bill == '' | serviceQual ==0){
+    if(bill == '' | serviceQual == 0){
         alert("Por favor, preencha os valores")
         return; 
     }
 
-    if(numOfPeople == "" | numOfPeople <=1){
+    if(numOfPeople == "" | numOfPeople <= 1){
         numOfPeople = 1;
         document.getElementById('each').style.display = "none";
     } else {
