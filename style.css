@@ -1,22 +1,25 @@
-:root{
-    --primnary-color: rgb(63, 245, 245);
-    --secondary-color: rgb(255, 255, 255);
-    --tertiary-color: rgb(179, 0, 255);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|PT++Mono);
+
+:root {
+    --primary-color: rgb(215, 168, 247);
+    --tertiary-color: rgba(46, 3, 94, 0.13);
+    --secondary-color: rgb(64, 2, 140);
+
 }
 
-body{
-    background: var(--primnary-color);
+body {
+    background-color: var(--primary-color); 
     font-size: 15px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Lato, sans-serif;
 }
 
 #container {
     height: 525px;
     width: 360px;
     margin: 100px auto;
-    background: rgb(232, 232, 232);
-    box-shadow: 3px 6px 6px  rgb(255, 98, 224);
-    border-radius: 22px;
+    background: rgba(205, 255, 193, 0.763);
+    box-shadow: 5px 5px 5px var(--tertiary-color);
+    border-radius: 20px;
 }
 
 .title {
@@ -24,68 +27,50 @@ body{
     color: var(--secondary-color);
     padding: 20px;
     text-transform: uppercase;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 23px;
+    font-size: 18px;
     font-weight: normal;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     text-align: center;
 }
-.questions{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(104, 11, 176);
-    font-size: 17px;
+
+.tipsForm {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.tipsForm{
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-.formInput{
-    background: rgb(254, 254, 254);
-    width: 80px;
+.formInput {
+    background: rgba(252, 252, 252, 0.866);
+    width: 40px;
     padding: 5px 5px 8px 8px;
 }
 
-.formInput :focus{
-    border: 3px solid var(--primnary-color);
+.formInput:focus {
+    border: 3px solid var(--primary-color);
     outline: none;
 }
 
-.formSelect{
-    width: 170px;
+.formSelect {
+    width: 180px;
     padding: 5px;
     font-size: 12px;
 }
 
-.formSubmit{
+.formSubmit {
     text-transform: uppercase;
     font-weight: bold;
     display: block;
     margin: 30px auto;
-    background: var(--tertiary-color);
+    background: rgba(30, 255, 1, 0.774);
     border-radius: 5px;
     width: 200px;
     height: 50px;
-    font-size: 18px;
+    font-size: 17px;
     color: white;
 }
 
-#totalTip{
+#totalTip {
     font-size: 20px;
     margin-top: 5px;
     text-align: center;
-}
-
-a:visited{ 
-    color: greenyellow;
-}
-
-a:hover{
-    color:aqua;
-}
-
-a:active{
-    color: brown;
 }
